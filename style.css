@@ -1,30 +1,30 @@
 @font-face {
-  font-family: heading;
+  font-family: "heading";
   src: url(./Assets/Fonts/PF\ Monumenta\ Pro\ Regular.ttf);
 }
 
 @font-face {
-  font-family: gilmer-light;
+  font-family: "gilmer-light";
   src: url(./Assets/Fonts/Gilmer\ Light.ttf);
 }
 
 @font-face {
-  font-family: gilmer-regular;
+  font-family: "gilmer-regular";
   src: url(./Assets/Fonts/Gilmer\ Regular.ttf);
 }
 
 @font-face {
-  font-family: gilmer-medium;
+  font-family: "gilmer-medium";
   src: url(./Assets/Fonts/Gilmer\ Medium.ttf);
 }
 
 @font-face {
-  font-family: gilmer-heavy;
+  font-family: "gilmer-heavy";
   src: url(./Assets/Fonts/Gilmer\ Heavy.ttf);
 }
 
 @font-face {
-  font-family: gilmer-bold;
+  font-family: "gilmer-bold";
   src: url(./Assets/Fonts/Gilmer\ Bold.ttf);
 }
 
@@ -33,7 +33,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: gilmer-regular;
-  font-weight: 800;
 }
 
 html,
@@ -51,6 +50,8 @@ body {
 .mainHeading {
   font-size: 3.5vw;
   color: #333;
+  font-family: "gilmer-bold";
+  font-weight: 600;
 }
 
 .mainP {
@@ -59,7 +60,7 @@ body {
   font-weight: 500;
 }
 
-a {text-decoration: none;}
+a {text-decoration: none !important;}
 
 .d-flex {
   display: flex;
@@ -121,7 +122,7 @@ a {text-decoration: none;}
 }
 
 nav {
-  font-family: gilmer-regular;
+  position: fixed;
   width: 80%;
   height: 8vh;
   border-radius: 50px;
@@ -138,6 +139,8 @@ nav {
   height: 100%;
 }
 
+
+
 .logo img {
   width: 40%;
 }
@@ -152,27 +155,30 @@ nav {
   color: #fffae0;
   font-size: 1rem;
 }
+.nav-link a:hover{
+  color: #fffae0;
+  font-size: 1rem;
+}
 
 .rght-nav {
   width: 25%;
   height: 100%;
 }
 
-.rght-nav button {
+.cta-btn{
   background-color: #a0539b;
   border: none;
   color: #fffae0;
   padding: 0.8vw 2vw;
   border-radius: 50px;
-  font-family: gilmer-regular;
   font-size: 0.9rem;
 }
 
 .mobile-nav-btn {
   font-size: 1.5rem;
-  display: none;
   background: transparent;
   cursor: pointer;
+  visibility:hidden;
 }
 
 #mobile-nav-close[name="close"] {
@@ -233,31 +239,39 @@ nav {
   top: 20%;
   left: 20%;
   text-align: center;
+  font-size: 1.3vw;
 }
 .rght-frst-head span {
-  color: rgb(255, 187, 60);
+  color:#cba578;
 }
 .rght-main-header .rght-scnd-head {
   position: absolute;
+  font-size: 1.3vw;
   bottom: 20%;
   right: 18%;
   text-align: center;
 }
 .rght-scnd-head span {
-  color: rgb(255, 187, 60);
+  color:#cba578;
 }
 
 .jewellery-btn {
   color: #000;
 }
 
+.jewellery-btn a:hover {
+  color: #000;
+}
+
 .jewellery-btn a {
   display: flex;
+  font-family: "gilmer-medium";
+  font-weight: 800;
   justify-content: center;
   align-items: center;
   width: fit-content;
   height: 5vh;
-  border: 2px solid #ffd500;
+  border: 2px solid #cba578;
   border-radius: 10px;
   padding: 0.8vw;
   margin-right: 30px;
@@ -268,20 +282,23 @@ nav {
   gap: 1vw;
 }
 
+
 /*----------------------------------
 Section-2
 ----------------------------------*/
-
 .section-2{
   min-height: 80vh;
   width: 100%;
   z-index: 9;
   position: relative;
   padding: 170px 100px;
-  background-color:#cba578;
+  background-color:#fffae0;
 }
+
+.text-div a{color: #cba578;}
+
 .elem{
-  color: #fffae0;
+  color: #cba578;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -301,6 +318,7 @@ Section-2
   right: 5%;
 }
 .text-div{
+  cursor: pointer;
   height: 16vh;
   position: relative;
   z-index: 9;
@@ -326,13 +344,10 @@ Section-2
 Section-3
 ----------------------------------*/
 .section-3{
-  min-height: 30vh;
+  min-height: 80vh;
   width: 100%;
-  min-height: 100vh;
   position: relative;
   z-index: 9;
-  padding: 5vh 0;
-  background-color: #fffae0;
   font-weight: 300;
 }
 
@@ -340,6 +355,7 @@ Section-3
   font-size: 8vw;
   margin-left: 6vw;
   transform-origin: left;
+  color: #333;
 }
 .section-3 h2{
   margin-left: 15vw;
@@ -353,15 +369,137 @@ Section-3
   transform: translate(-50%,0);
 }
 
+
+/*----------------------------------
+Section-4
+----------------------------------*/
+
 .section-4{
 width:100%;
-height:100vh;
-background-color: pink;
+height:70vh;
+gap: 5vw;
+/* background-color:#cba578 ; */
+}
+
+.lft-section-4{
+  width: 50%;
+  height: 100% }
+
+.lft-section-4 img{width: 90%;}
+
+.rght-section-4{
+  width: 40%;
+  height: 100%;}
+
+.rght-section-4{
+  gap:1vw;
+  text-align: center;}
+
+.rght-section-4 h1{
+  font-size:2.5rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.rght-section-4 p{
+font-size: 1.125rem;
+  color: #333;
+  font-weight: 400;
+}
+
+/*----------------------------------
+Section-5
+----------------------------------*/
+.section-5{
+  width: 100%;
+  height: 60vh;
+  gap: 5vh;
+}
+
+.container-5{
+  width: 100%;
+  height: 40vh;
+  gap: 5vw;
+}
+
+.box-1 , .box-2 , .box-3{
+width: 20vw;
+height: 100%;
+/* background-color: #a0539b; */
+font-size: 18px;
+padding: 50px 30px;
+box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+transition: all ease-in-out 0.5s;
+cursor: pointer;}
+
+.box-1 span , .box-2 span , .box-3 span {
+  font-size: 24px;
+}
+  .container-5 h4{
+  font-size: 26px;
+  font-weight: 500;
+  padding: 0;
+  margin: 20px 0;
+  color: #000;}
+  
+  .container-5 p{
+  text-align: justify;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;}
+  
+  .container-5 .box-1:hover , .box-2:hover , .box-3:hover {
+  background:#cba578;
+  padding: 30px 30px 70px 30px ;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);}
+  
+.container-5 .box-1:hover span, .container-5 .box-1:hover h4, .container-5 .box-1:hover p{color: #fff;}
+.container-5 .box-2:hover span, .container-5 .box-2:hover h4, .container-5 .box-2:hover p{color: #fff;}
+.container-5 .box-3:hover span, .container-5 .box-3:hover h4, .container-5 .box-3:hover p{color: #fff;}
+  
+/*----------------------------------
+MAP
+----------------------------------*/
+.map{
+  text-align: center;
+  justify-content: center;
+  padding-top:30px;
+  background-color: #fffae0;
 }
 
 
+/*-------------------------------
+Footer
+------------------------------*/
+.footer{
+  width:100%;
+  height:30vh;
+  background-color: #cba578;  
+  gap: 1.5vh;
+  }
+  
+  .footer img{  width:250px;}
+  
+  .footer p{
+  font-family: gilmer-medium;
+  font-size:20px;  
+  font-weight:400;
+  color: #000;
+  }
 
+  .icons img{
+  width:40px;
+  margin-left:25px;
+  }
+  
+  .footer-end h2{
+  font-size:17px;
+  }
+  .footer-end{
+  height:5vh; 
+  }
 
+  
 
 /*----------------------------
 Media Query
@@ -374,7 +512,6 @@ Media Query
   .elem:hover img{
       opacity: 1;
       transform: translateY(0%) rotate(0deg);
-  
   }  
 }
 
@@ -383,7 +520,7 @@ Media Query
     justify-content: space-between;
     padding: 0 5vw;
   }
-
+  
   .logo img {
     width: 120%;
   }
@@ -395,6 +532,7 @@ Media Query
   .mobile-nav-btn {
     display: block;
     z-index: 999;
+    visibility: visible;
   }
 
   .rght-nav {
@@ -403,6 +541,14 @@ Media Query
   .section-1 {
     height: 150vh;
   }
+
+.nav-link a{
+  display:none;
+}
+  
+.cta-btn{
+  display:none;
+}
   .header-main-content {
     flex-direction: column;
     height: 150vh;
@@ -442,10 +588,26 @@ Media Query
   .rght-main-header .rght-frst-head {
     top: -10%;
     left: 10%;
+    font-size:3vh;
   }
   .rght-main-header .rght-scnd-head {
-    bottom: 14%;
+    bottom: 25%;
     right: 10%;
+    font-size:3vh;
+  }
+  .section-4{
+    flex-direction: column;
+  }
+  .lft-section-4, .rght-section-4{
+    width: 100%;
+  }
+
+  .section-6{
+    margin-top:350px;
+  }
+
+  .box{
+margin-bottom:2vh;
   }
 }
 
