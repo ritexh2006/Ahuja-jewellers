@@ -532,6 +532,7 @@ Footer
   font-size: 20px;
   font-weight: 400;
   color: #000;
+  text-align: center;
 }
 
 .icons img {
@@ -540,7 +541,9 @@ Footer
 }
 
 .footer-end h2 {
-  font-size: 17px;
+  font-size: 16px;
+  text-align: center;
+  margin: 4vh 0vw;
 }
 .footer-end {
   height: 5vh;
@@ -642,10 +645,21 @@ Media Query
   }
   .section-4 {
     flex-direction: column;
+    height: 50vh;
+    margin: 5vh 0vw;
   }
   .lft-section-4,
   .rght-section-4 {
-    width: 100%;
+    width: 90%;
+  }
+
+  .rght-section-4 h1{
+    font-size: 1.2rem;
+  }
+
+  .rght-section-4 p{
+    font-size: 1rem;
+    padding:1vh 4vw;
   }
 
   .section-6 {
@@ -659,26 +673,36 @@ Media Query
     min-height: 40vh;
   }
   .section-5 {
-    height: 150vh;
+    height: 100vh;
   }
+
+  .section-5 h2{
+    font-size: 8vw;
+  }
+
   .container-5 {
     flex-direction: column;
-    height: 130vh;
+    height: 142vh;
   }
   .box-1,
   .box-2,
   .box-3 {
     width: 100%;
+    height: 30%;
   }
   .elem h1 {
-    font-size: 14vw;
+    font-size: 15vw;
+  }
+  .elem img{
+    display: none;
   }
   .section-2 {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10vw;
+    /* padding: 10vw; */
+    height: 40vh;
   }
   .text-div {
     height: 10vh;
