@@ -112,8 +112,8 @@ a {
 }
 .cursor {
   cursor: pointer;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   position: fixed;
   background-color: #edbfff;
@@ -397,7 +397,6 @@ Section-4
   width: 100%;
   height: 70vh;
   gap: 5vw;
-  /* background-color:#cba578 ; */
 }
 
 .lft-section-4 {
@@ -451,7 +450,6 @@ Section-5
 .box-3 {
   width: 20vw;
   height: 100%;
-  /* background-color: #a0539b; */
   font-size: 18px;
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -579,7 +577,7 @@ Media Query
 
   .mobile-nav-btn {
     display: block;
-    z-index: 999;
+    z-index: 99;
     visibility: visible;
   }
 
@@ -661,7 +659,6 @@ Media Query
     font-size: 1rem;
     padding:1vh 4vw;
   }
-
   .section-6 {
     margin-top: 350px;
   }
@@ -701,7 +698,6 @@ Media Query
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* padding: 10vw; */
     height: 40vh;
   }
   .text-div {
