@@ -275,6 +275,7 @@ Section-2
   position: relative;
   padding: 170px 100px;
   background-color: #fffae0;
+  margin-top: 100px;
 }
 
 .text-div a {
@@ -359,7 +360,7 @@ Section-4
 
 .section-4 {
   width: 100%;
-  height: 70vh;
+  height: 50vh;
   gap: 5vw;
 }
 
