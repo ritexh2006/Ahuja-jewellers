@@ -363,30 +363,30 @@ Section-2
 Section-3
 ----------------------------------*/
 .section-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   min-height: 80vh;
   width: 100%;
   position: relative;
   z-index: 9;
   font-weight: 300;
+  padding: 5vw 0vw;
 }
 
 .section-3 h1,
 .section-3 h2 {
   font-size: 8vw;
-  margin-left: 6vw;
   transform-origin: left;
   color: #333;
 }
-.section-3 h2 {
-  margin-left: 15vw;
-}
+
 
 .section-3 video {
   width: 40%;
   margin-top: 10vw;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
+
 }
 
 /*----------------------------------
@@ -397,6 +397,7 @@ Section-4
   width: 100%;
   height: 70vh;
   gap: 5vw;
+  padding: 5vw;
   /* background-color:#cba578 ; */
 }
 
@@ -436,8 +437,9 @@ Section-5
 ----------------------------------*/
 .section-5 {
   width: 100%;
-  height: 60vh;
+  min-height: 60vh;
   gap: 5vh;
+  padding: 5vw 5vw;
 }
 
 .container-5 {
@@ -641,6 +643,7 @@ Media Query
     font-size: 3vh;
   }
   .section-4 {
+    height: 100vh;
     flex-direction: column;
   }
   .lft-section-4,
@@ -659,7 +662,7 @@ Media Query
     min-height: 40vh;
   }
   .section-5 {
-    height: 150vh;
+    min-height: 150vh;
   }
   .container-5 {
     flex-direction: column;
@@ -674,6 +677,7 @@ Media Query
     font-size: 14vw;
   }
   .section-2 {
+    min-height: 45vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -681,6 +685,6 @@ Media Query
     padding: 10vw;
   }
   .text-div {
-    height: 10vh;
+    height: 9vh;
   }
 }

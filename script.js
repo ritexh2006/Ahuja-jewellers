@@ -60,25 +60,7 @@ gsap.from(".section-3 h1,.section-3 h2", {
     delay: 0.3,
     duration: 0.7
 })
-var tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".section-3",
-        // scroller: ".main",
-        // markers: true,
-        start: "top 30%",
-        end: "100% 90%",
-        scrub: 3
-    }
-})
-tl.to(".section-3 h1", {
-    x: -100,
-}, "anim")
-tl.to(".section-3 h2", {
-    x: 100
-}, "anim")
-tl.to(".section-3 video", {
-    width: "90%"
-}, "anim")
+
 
 // var tl2 = gsap.timeline({
 //     scrollTrigger: {
@@ -132,3 +114,50 @@ close.addEventListener("click", () => {
     close.style.display = "none"
     slider.style.left = "-100%"
 })
+
+
+let mm = gsap.matchMedia();
+
+mm.add("(min-width: 800px)", () => {
+    var tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".section-3",
+            // scroller: ".main",
+            markers: true,
+            start: "top 30%",
+            end: "100% 90%",
+            scrub: 3
+        }
+    })
+    tl.to(".section-3 h1", {
+        x: -100,
+    }, "anim")
+    tl.to(".section-3 h2", {
+        x: 100
+    }, "anim")
+    tl.to(".section-3 video", {
+        width: "90%"
+    }, "anim")
+});
+
+mm.add("(max-width: 799px)", () => {
+    var tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".section-3",
+            // scroller: ".main",
+            markers: true,
+            start: "top 50%",
+            end: "150% 50%",
+            scrub: 3
+        }
+    })
+    tl.to(".section-3 h1", {
+        x: -100,
+    }, "anim")
+    tl.to(".section-3 h2", {
+        x: 100
+    }, "anim")
+    tl.to(".section-3 video", {
+        width: "90%"
+    }, "anim")
+  });
