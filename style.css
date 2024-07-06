@@ -439,7 +439,7 @@ Section-5
   width: 100%;
   min-height: 60vh;
   gap: 5vh;
-  padding: 5vw 5vw;
+  padding: 5vw;
 }
 
 .container-5 {
@@ -687,4 +687,85 @@ Media Query
   .text-div {
     height: 9vh;
   }
+
+  .footer{
+   height:40vh; 
+  }
+
+  .footer p{
+  font-size:14px;  
+  gap:1.5vh;
+  }
+  
+ .footer .icons img {
+    width: 29px;
+    margin-left: 20px;
 }
+.footer img{
+width:170px;  
+}
+
+.map{
+margin-top:200px;  
+}
+
+.footer-end h2 {
+  font-size: 10px;
+  text-align: center;
+  margin: 4vh 0vw;
+}
+}
+
+/*--------------------------------
+Gallery
+--------------------------------*/
+.img-gallery{
+  width:80%;
+  margin:100px auto 50px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap:30px;  
+  }
+  
+  .img-gallery  img{
+  width:100%;
+  cursor: pointer;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  }
+  
+  .img-gallery img:hover{
+  transform:scale(0.8) rotate(-15deg);
+  border-radius:20px;
+  box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2); 
+  
+  }
+  
+  .full-img{
+    width:100%;
+    height:100vh;
+    background:rgba(0, 0, 0, 0.9);
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:100;
+    display:none;
+  }
+  
+  .full-img img{
+  width:90%;  
+  max-width:400px;
+  }
+  
+  .full-img span{
+    position:absolute;
+    top:15%;
+    right:5%;
+    font-size:30px;
+    color:#fff;
+    cursor: pointer;
+  }
+  
+  
